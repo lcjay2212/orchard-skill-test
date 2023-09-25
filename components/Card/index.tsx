@@ -5,16 +5,16 @@ const Card: FC<{ title: string; image: string; content: string }> = ({
   image,
   content,
 }) => (
-  <Flex flexDir="column" w="385px">
+  <Flex flexDir="column" w={{ base: "280px", lg: "385px" }}>
     <Box borderBlockEnd="3px solid red">
       <Image src={image} alt="test" />
     </Box>
     <Box textAlign="start" mt="1.5rem">
-      <Text color="white" fontSize="1.25rem">
+      <Text color="white" fontSize={{ base: "1rem", lg: "1.25rem" }}>
         {title}
       </Text>
 
-      <Text my="1rem" fontSize="18px">
+      <Text my="1rem" fontSize={{ base: "14px", lg: "18px" }}>
         {content}
       </Text>
     </Box>
