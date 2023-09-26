@@ -25,7 +25,7 @@ const Card: FC<{ title: string; image: string; content: string }> = ({
         cursor="pointer"
         borderBlockEnd="1px solid red"
         paddingBottom="0.5rem"
-        onClick={() => console.log("clicked")}
+        onClick={() => console.log(`clicked ${title}`)}
       >
         READ MORE
       </Text>
